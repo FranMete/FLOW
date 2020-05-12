@@ -10,9 +10,14 @@ app.use((req, res, next) => {
  console.log('ENVIROMENT',app.get('env'));
  if (app.get('env') != 'development') {
   const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-  config.ipApiURL = config.ipApiURL + ip;
-  console.log('SOY IP ', config.ipApiURL);
+  config.ipApiURL = config.ipApiURl(ip);
+ 
+ }else if(app.get('env') === 'development'){
+  const ip = false;
+  config.ipApiURL = config.ipApiURl(ip);
  }
+ console.log('SOY IP ', config.ipApiURL);
+ 
  next()
 })
 
