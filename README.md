@@ -56,6 +56,7 @@ npm start
   ```
 ### /forecast[/city]
 _City es un parámetro opcional. Devuelve los datos de ubicación city o la ubicación actual según ip-api y el estado del tiempo a 5 días_.
+
 sin parámetro
 ```
 http://localhost:8080/v1/forecast
@@ -65,4 +66,18 @@ parámetro city=frankfurt
 ```
 http://localhost:8080/v1/forecast?city=frankfurt
 
+```
+
+## TEST
+Se usó **supertest**, como aparece en la recomendación, con el framework **mocha**. 
+
+1. Haber instalado como aparece en el apartado INSTALACION
+2. Situarse en la raíz del proyecto (o sea, dentro de la carpeta "FLOW" )
+3. Ejecutar el siguiente código 
+```
+npm test
+```
+4. El archivo de test se encuentra en 
+```
+FLOW/test/apiTest.js
 ```
