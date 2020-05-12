@@ -16,17 +16,21 @@ git clone https://github.com/FranMete/FLOW.git
 
 ``` 
 2. Situarse en la raíz del proyecto (o sea dentro de la carpeta "FLOW" )
-3. Para instalar localmente las dependencias como express, axios, body-parser, etc
+3. Para instalar localmente las dependencias como express, axios, body-parser, etc ejecutar el siguiente código
 ```
 npm install
 ``` 
 ## PARA CORRER EL SERVIDOR Y PROBAR EN EL NAVEGADOR
 1. Situarse en la raíz del proyecto (o sea, dentro de la carpeta "FLOW" )
+2. Una vez en la raíz del proyecto, ejecutar el siguiente código
+````
+npm start
+```
 3. Una vez que el servidor esté corriendo, en la consola debe aparecer el siguiente mensaje: 
 ```
  "servidor corriendo en puerto 8080" 
  ```    
-  3. Dirigirse al browser de su preferencia (google chrome, firefox, etc) y probar las siguientes urls del challenge
+  4. Dirigirse al browser de su preferencia (google chrome, firefox, etc) y probar las siguientes urls del challenge:
 
   ### /location
 
