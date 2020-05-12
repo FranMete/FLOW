@@ -7,7 +7,7 @@ module.exports = (config) => {
 
  router.use((req, res, next) => {
   req.config = config;
-  next()
+  next();
  })
 
  router.get('/location', allControllers.location);
