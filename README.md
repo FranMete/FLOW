@@ -8,7 +8,7 @@ para los datos del clima
 para obtener latitud y longitud de la ciudad ingresada por parámetro
 ## PROBAR ONLINE
 La app está desplegada en Heroku 
-## INSTALACION
+## INSTALACION PARA CORRER EN LOCAL
 ### requisitos previos
 tener instalada una versión de Node superior a la 8 (preferentemente la LTS actual)
 ### instalación
