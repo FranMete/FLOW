@@ -19,7 +19,7 @@ current = async (req, res) => {
  const ipApiUrl = req.config.ipApiURL;
  // obtener la URL para consultar el tiempo según si viene o no el parámetro 'city'
  const weatherURL = await main.getWeatherURL(req, querys, ipApiUrl);
- if (!weatherURL.ok) { return res.status(weatherURL.status).json({ message: weatherURL.message, err: weatherURL.data }) }
+ if (!weatherURL.ok) { return res.status(500).json({ message: weatherURL.message, err: weatherURL.data }) }
  try {
   const queryWeather_ = await reqApi.requestAPIs(weatherURL.url);
   const queryWeather = queryWeather_.data;

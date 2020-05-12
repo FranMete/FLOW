@@ -6,8 +6,9 @@ const config = configs[app.get('env')];
 const routes = require('./routes');
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use((req, res, next), () => {
- if (app.get('env') != 'developement') {
+app.use((req, res, next) => {
+ console.log('ENVIROMENT',app.get('env'));
+ if (app.get('env') != 'development') {
   const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
   config.ipApiURL = config.ipApiURL + ip;
   console.log('SOY IP ', config.ipApiURL);
