@@ -9,6 +9,7 @@ para obtener latitud y longitud de la ciudad ingresada por parámetro
 ## INSTALACION
 ### requisitos previos
 tener instalada una versión de Node superior a la 8 (preferentemente la LTS actual)
+### instalación
 1. clonar el repo
 ```
 git clone https://github.com/FranMete/FLOW.git 
