@@ -41,10 +41,12 @@ npm start
 
   _Devuelve los datos de ubicación city según ip-api_. 
 
-  ```
    local
+  ```
    http://localhost:8080/v1/location
+   ```
    heroku
+   ```
    https://flow-challenge-metetiero.herokuapp.com/v1/location
   ```
   ### /current[/city]
