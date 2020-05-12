@@ -23,10 +23,12 @@ npm install
 ## PARA CORRER EL SERVIDOR Y PROBAR EN EL NAVEGADOR
 1. Situarse en la raíz del proyecto (o sea, dentro de la carpeta "FLOW" )
 2. Una vez en la raíz del proyecto, ejecutar el siguiente código
-````
+
+```
 npm start
 ```
 3. Una vez que el servidor esté corriendo, en la consola debe aparecer el siguiente mensaje: 
+
 ```
  "servidor corriendo en puerto 8080" 
  ```    
