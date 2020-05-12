@@ -77,7 +77,7 @@ Se usó **supertest**, como aparece en la recomendación, con el framework **moc
 ```
 npm test
 ```
-4. El archivo de test se encuentra en 
+El archivo de test se encuentra en 
 ```
 FLOW/test/apiTest.js
 ```
