@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
   development: {
+
     PORT: process.env.PORT || 8080,
     ipApiURL: 'http://ip-api.com/json/',
     weatherApiURL: (lat, lon, excl) => { return `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&

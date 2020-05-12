@@ -83,6 +83,7 @@ describe('GET /forecast', function () {
             })
     });
 
+
     it('Devuelve los datos de la ubicación según parámetro city=frankfurt y el estado del tiempo a 5 días', function (done) {
         request(app)
             .get('/v1/forecast?city=frankfurt')

@@ -13,8 +13,8 @@ location = async (req, res) => {
 };
 
 current = async (req, res) => {
-
  /// consulta a openWeather API
+
  const querys = req.query;
  const ipApiUrl = req.config.ipApiURL;
  // obtener la URL para consultar el tiempo según si viene o no el parámetro 'city'

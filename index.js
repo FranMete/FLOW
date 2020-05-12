@@ -9,7 +9,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
-
 app.listen(config.PORT, () => console.log(`servidor corriendo en puerto ${config.PORT}`));
 
 app.use('/v1', routes(config));

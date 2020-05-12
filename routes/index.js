@@ -4,6 +4,7 @@ const router = express.Router();
 const allControllers = require('../controllers/all-controller');
 
 module.exports = (config) => {
+
  router.use((req, res, next) => {
   req.config = config;
   next()

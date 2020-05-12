@@ -1,6 +1,8 @@
 require('colors');
 const reqApi = require('./reqApis');
 
+
+
 getWeatherURL = async (req, querys, ipApiUrl) => {
  // devuelve URL para consultar a openWeather según venga o no parámetro 'city'
  if (Object.keys(querys).length) {
