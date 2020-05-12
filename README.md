@@ -6,6 +6,8 @@ para detectar la ubicación actual
 para los datos del clima
 ### opencagedata
 para obtener latitud y longitud de la ciudad ingresada por parámetro
+## PROBAR ONLINE
+La app está desplegada en Heroku 
 ## INSTALACION
 ### requisitos previos
 tener instalada una versión de Node superior a la 8 (preferentemente la LTS actual)
@@ -20,7 +22,8 @@ git clone https://github.com/FranMete/FLOW.git
 ```
 npm install
 ``` 
-## PARA CORRER EL SERVIDOR Y PROBAR EN EL NAVEGADOR
+## PROBAR EN EL NAVEGADOR: LOCAL Y HEROKU
+para correr en el local siga los pasos del 1 al 3
 1. Situarse en la raíz del proyecto (o sea, dentro de la carpeta "FLOW" )
 2. Una vez en la raíz del proyecto, ejecutar el siguiente código
 
@@ -39,33 +42,62 @@ npm start
   _Devuelve los datos de ubicación city según ip-api_. 
 
   ```
+   local
    http://localhost:8080/v1/location
-
+   heroku
+   https://flow-challenge-metetiero.herokuapp.com/v1/location
   ```
   ### /current[/city]
   
   _City es un parámetro opcional. Devuelve los datos de ubicación city o la ubicación actual según ip-api y el estado del tiempo actual_.
 
-  sin parámetro
+  **sin parámetro**
+
+  local
   ```
   http://localhost:8080/v1/current
   ```
-  parámetro city=frankfurt
+  heroku 
+  ```
+  https://flow-challenge-metetiero.herokuapp.com/v1/current
+  ```
+  **parámetro city=frankfurt**
+  
+  local
   ```
   http://localhost:8080/v1/current?city=frankfurt
+  ```
+
+  heroku
+  ```
+  https://flow-challenge-metetiero.herokuapp.com/v1/current?city=frankfurt
   ```
 ### /forecast[/city]
 _City es un parámetro opcional. Devuelve los datos de ubicación city o la ubicación actual según ip-api y el estado del tiempo a 5 días_.
 
-sin parámetro
+**sin parámetro**
+
+local
 ```
 http://localhost:8080/v1/forecast
 
 ```
-parámetro city=frankfurt
+
+heroku
+```
+https://flow-challenge-metetiero.herokuapp.com/v1/forecast
+```
+**parámetro city=frankfurt**
+
+local
 ```
 http://localhost:8080/v1/forecast?city=frankfurt
 
+```
+
+heroku
+```
+https://flow-challenge-metetiero.herokuapp.com/v1/forecast?city=frankfurt
 ```
 
 ## TEST
